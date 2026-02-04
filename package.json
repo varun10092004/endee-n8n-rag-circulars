@@ -1,0 +1,16 @@
+{
+  "name": "endee-n8n-rag-circulars",
+  "version": "1.0.0",
+  "main": "backend/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/index.js",
+    "ingest": "node backend/index.js ingest"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "fs-extra": "^11.2.0"
+  }
+}
