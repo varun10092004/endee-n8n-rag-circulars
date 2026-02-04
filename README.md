@@ -87,3 +87,45 @@ curl -X POST "http://localhost:5678/webhook/circulars-query" \
 
 ## License
 MIT License
+
+## Web Chat Interface (Option 3)
+
+For a user-friendly browser-based chat experience, open the `chat.html` file directly in your browser:
+
+### Using the Chat Interface
+
+1. **Open in Browser**: Simply open `chat.html` in your web browser
+   - You can use: `File > Open` and select `chat.html`
+   - Or host it on a local server and navigate to it
+
+2. **Connect to n8n Webhook**: The chat interface is pre-configured to connect to:
+   ```
+   http://localhost:5678/webhook/circulars-query
+   ```
+
+3. **Ask Questions**: Type your questions in the input field and press `Enter` or click `Send`
+
+4. **View Responses**: Responses from the RAG system will appear in the chat area
+
+### Features
+
+- **Real-time Chat**: Clean, modern UI with real-time message streaming
+- **Error Handling**: Displays helpful error messages if connection fails
+- **Responsive Design**: Works on desktop and mobile devices
+- **Beautiful UI**: Purple gradient theme with smooth animations
+
+### Requirements for Chat Interface
+
+- n8n workflow running on `localhost:5678` and active
+- Backend server running on `localhost:3000`
+- Endee vector database running
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+
+### Example Questions to Ask
+
+- "What is the submission deadline?"
+- "Find information about compensation structure"
+- "What are the leave policies?"
+- "Tell me about fee payment dates"
+
+The chat interface will retrieve relevant information from your circulars and provide contextual answers powered by the Endee vector database!
